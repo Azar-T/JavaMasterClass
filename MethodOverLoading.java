@@ -1,6 +1,7 @@
 public class MethodOverLoading {
     public static void main(String[] args) {
         System.out.println("5f , 8in = "+convertToCentimeters(5,8));
+        System.out.println("66in = " + convertToCentimeters(68));
 
 
     }
