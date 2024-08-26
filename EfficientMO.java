@@ -13,7 +13,7 @@ public class EfficientMO {
             return "invalid";
         }
         int minutes = seconds / 60;
-       return getDurationString(minutes,seconds);
+       return getDurationString(minutes /60,seconds % 60);
     }
 
     public static String getDurationString(int minutes, int seconds) {
@@ -30,8 +30,8 @@ public class EfficientMO {
 
         int remMinutes = minutes % 60;
 
-        int remSeconds = seconds % 60;
-        return hours + "h " + remMinutes + "m " + remSeconds + "s";
+
+        return hours + "h " + remMinutes + "m " + seconds+ "s";
 
     }
 
